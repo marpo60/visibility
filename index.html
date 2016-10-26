@@ -1,0 +1,15 @@
+<script src="https://dlom.github.io/favicon.js/favicon.min.js"></script>
+
+<script>
+  function handleVisibilityChange() {
+    if (document.hidden) {
+      favicon.change("https://www.google.com/s2/favicons?domain=https://www.google.com", "Google");
+    } else {
+      favicon.change("https://www.google.com/s2/favicons?domain=https://www.yahoo.com", "Yahoo");
+    }
+  }
+
+  favicon.change("https://www.google.com/s2/favicons?domain=https://www.yahoo.com", "Yahoo");
+
+  document.addEventListener("visibilitychange", handleVisibilityChange, false);
+</script>
